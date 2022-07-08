@@ -18,11 +18,17 @@ const query = `CREATE TABLE IF NOT EXISTS  ${tableName} ${fields}`;
 
 db.prepare(query).run();
 
+app.get("/", (req, res) =>
+  res.redirect("https://github.com/tinoschroeter/counter")
+);
+
 app.get("/id", (req, res) => res.send("ID missing..."));
 app.get("/id/:id", (req, res) => {
   const { id } = req.params;
   let count;
-  const result = db.prepare(`SELECT count FROM ${tableName} WHERE id=?`).get(id);
+  const result = db
+    .prepare(`SELECT count FROM ${tableName} WHERE id=?`)
+    .get(id);
 
   if (!result) {
     count = 0;
