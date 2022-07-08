@@ -2,11 +2,14 @@ const Database = require("better-sqlite3");
 const dbFile = process.env.DBFILE || "./data.sql";
 const db = new Database(dbFile);
 
+const nocache = require("nocache");
+
 const express = require("express");
 const app = express();
 const morgan = require("morgan");
 const { makeBadge, ValidationError } = require("badge-maker");
 
+app.use(nocache());
 app.use(morgan("combined"));
 
 const tableName = "counter";
