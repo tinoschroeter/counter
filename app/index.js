@@ -22,8 +22,8 @@ app.get("/", (req, res) =>
   res.redirect("https://github.com/tinoschroeter/counter")
 );
 
-app.get("/id", (req, res) => res.send("ID missing..."));
-app.get("/id/:id", (req, res) => {
+app.get("/visitor", (req, res) => res.send("ID missing..."));
+app.get("/visitor/:id", (req, res) => {
   const { id } = req.params;
   let count;
   const result = db

@@ -4,8 +4,8 @@
 
 in just one line markdown code
 
-![visitors](https://counter.tino.sh/id/tinoschroeter)
+![visitors](https://counter.tino.sh/visitor/tinoschroeter)
 
 ```md
-![visitors](https://counter.tino.sh/id/tinoschroeter)
+![visitors](https://counter.tino.sh/visitor/tinoschroeter)
 ```
