@@ -35,14 +35,14 @@ spec:
             cpu: "100m"
         readinessProbe:
           httpGet:
-            path: /id
+            path: /visitor
             port: 3000
           initialDelaySeconds: 2
           periodSeconds: 30
           failureThreshold: 3
         livenessProbe:
           httpGet:
-            path: /id
+            path: /visitor
             port: 3000
           initialDelaySeconds: 5
           periodSeconds: 20
