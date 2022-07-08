@@ -1,0 +1,6 @@
+namespace: counter
+bases:
+  - ../base
+  - config.yaml
+  - pvc.yaml
+  - ingress.yaml

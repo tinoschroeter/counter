@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+  name: counter-ingress
+spec:
+  rules:
+  - host: counter.tino.sh
+    http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: counter-app-service
+            port:
+              number: 80
+  tls:
+  - hosts:
+    - counter.tino.sh
+    secretName: counter-tino-sh-tls
