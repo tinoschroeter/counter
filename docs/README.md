@@ -19,3 +19,13 @@ npm start
 
 open http://localhost:3000/visitor/name
 ```
+
+```bash
+sqlite3 data.sql
+
+C | insert into counter values ("alice", 42);
+R | select * from counter;
+U | update counter set count = 77 where id = "alice";
+D | delete from counter where id = "alice";
+```
+
