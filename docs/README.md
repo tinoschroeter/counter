@@ -29,3 +29,8 @@ U | update counter set count = 77 where id = "alice";
 D | delete from counter where id = "alice";
 ```
 
+```sql
+.schema counter
+CREATE TABLE counter (id text NOT NULL UNIQUE, count integer NOT NULL);
+```
+
