@@ -20,7 +20,7 @@ npm start
 open http://localhost:3000/visitor/name
 ```
 
-```bash
+```sql
 sqlite3 data.sql
 
 C | insert into counter values ("alice", 42);
