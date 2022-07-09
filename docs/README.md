@@ -10,6 +10,8 @@ in just one line markdown code
 
 <img src="https://test.tino.sh" alt="test">
 
+<button type="submit"><img src="https://test.tino.sh" alt="test"></button>
+
 ```md
 ![visitors](https://counter.tino.sh/visitor/tinoschroeter)
 ```
