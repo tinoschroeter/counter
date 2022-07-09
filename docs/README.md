@@ -8,6 +8,7 @@ in just one line markdown code
 
 ```md
 ![visitors](https://counter.tino.sh/visitor/tinoschroeter)
+![visitors](https://counter.tino.sh/visitor/{{ $id }})
 ```
 
 ## development
