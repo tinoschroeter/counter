@@ -8,7 +8,7 @@ in just one line markdown code
 
 ![test](https://test.tino.sh)
 
-<iframe src="https://test.tino.sh" title="test"></iframe>
+<img src="https://test.tino.sh" alt="test">
 
 ```md
 ![visitors](https://counter.tino.sh/visitor/tinoschroeter)
