@@ -6,12 +6,6 @@ in just one line markdown code
 
 ![visitors](https://counter.tino.sh/visitor/tinoschroeter)
 
-![test](https://test.tino.sh)
-
-<img src="https://test.tino.sh" alt="test">
-
-<button type="submit"><img src="https://test.tino.sh" alt="test"></button>
-
 ```md
 ![visitors](https://counter.tino.sh/visitor/tinoschroeter)
 ```
