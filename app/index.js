@@ -10,6 +10,7 @@ const morgan = require("morgan");
 const { makeBadge, ValidationError } = require("badge-maker");
 
 app.use(nocache());
+app.enable("trust proxy");
 app.use(morgan("combined"));
 
 const tableName = "counter";
