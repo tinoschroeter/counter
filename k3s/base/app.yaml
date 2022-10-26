@@ -11,6 +11,11 @@ spec:
       app: counter-backend
   template:
     metadata:
+      annotations:
+        prometheus.io/path: /metrics
+        prometheus.io/scrape: "true"
+        prometheus.io/port: '3000'
+
       labels:
         app: counter-backend
     spec:

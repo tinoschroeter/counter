@@ -13,6 +13,18 @@ app.use(nocache());
 app.enable("trust proxy");
 app.use(morgan("combined"));
 
+const promBundle = require("express-prom-bundle");
+app.use(
+  "/",
+  promBundle({
+    includePath: true,
+    includeMethod: true,
+    promClient: {
+      collectDefaultMetrics: {},
+    },
+  })
+);
+
 const tableName = "counter";
 const fields = "(id text NOT NULL UNIQUE, count integer NOT NULL)";
 const query = `CREATE TABLE IF NOT EXISTS  ${tableName} ${fields}`;
