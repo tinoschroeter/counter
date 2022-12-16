@@ -40,14 +40,14 @@ spec:
             cpu: "100m"
         readinessProbe:
           httpGet:
-            path: /visitor
+            path: /healthz
             port: 3000
           initialDelaySeconds: 2
           periodSeconds: 30
           failureThreshold: 3
         livenessProbe:
           httpGet:
-            path: /visitor
+            path: /healthz
             port: 3000
           initialDelaySeconds: 5
           periodSeconds: 20

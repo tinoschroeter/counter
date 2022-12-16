@@ -35,6 +35,13 @@ app.get("/", (req, res) =>
   res.redirect("https://github.com/tinoschroeter/counter")
 );
 
+app.get("/healthz", (req, res) => {
+  const result = db.prepare(`SELECT * FROM ${tableName}`);
+
+  console.log(result);
+  if (result) return res.send("ok");
+  res.status(500).send("db down");
+});
 app.get("/visitor", (req, res) => res.send("ID missing..."));
 app.get("/visitor/:id", (req, res) => {
   const { id } = req.params;
