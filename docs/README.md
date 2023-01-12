@@ -34,4 +34,3 @@ D | delete from counter where id = "alice";
 .schema counter
 CREATE TABLE counter (id text NOT NULL UNIQUE, count integer NOT NULL);
 ```
-
