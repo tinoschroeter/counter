@@ -7,7 +7,7 @@ const nocache = require("nocache");
 const express = require("express");
 const app = express();
 const morgan = require("morgan");
-const { makeBadge, ValidationError } = require("badge-maker");
+const { makeBadge } = require("badge-maker");
 
 app.use(nocache());
 app.enable("trust proxy");
