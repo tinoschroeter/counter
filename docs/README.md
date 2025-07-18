@@ -2,7 +2,7 @@
 
 > Count visitors for your README.md, Issues, PRs, etc
 
-in just one line markdown code
+In just one line markdown code
 
 ![visitors](https://counter.tino.sh/visitor/tinoschroeter)
 

@@ -1,4 +1,4 @@
-FROM node:gallium-bullseye-slim AS app
+FROM node:22 AS app
 
 RUN apt-get update && \
     apt-get install sqlite3 -y
