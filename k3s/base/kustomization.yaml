@@ -2,4 +2,3 @@ namespace: counter
 resources:
   - service.yml
   - app.yaml
-

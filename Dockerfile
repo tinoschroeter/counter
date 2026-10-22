@@ -1,7 +1,7 @@
-FROM node:22 AS app
+FROM node:24 AS app
 
-RUN apt-get update && \
-    apt-get install sqlite3 -y
+#RUN apt-get update && \
+#  apt-get install sqlite3 -y
 
 WORKDIR /app
 COPY app .
